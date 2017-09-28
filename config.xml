@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.potdrive.potdrive2" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Potdrive</name>
+    <description>
+        For all your pot needs.
+    </description>
+    <author email="mihai.colceriu@takeofflabs.com" href="http://takeofflabs.com">
+        Take Off Labs
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="orientation" value="portrait" />
+    <engine name="android" spec="~6.2.3" />
+    <engine name="ios" spec="^4.5.1" />
+    <plugin name="cordova-plugin-call-number" spec="^1.0.1" />
+    <plugin name="cordova-plugin-device" spec="^1.1.6" />
+    <plugin name="cordova-plugin-googlemaps" spec="~2.0.10">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyD-qlC-H83zt1DZLMswU-DrEYB3P3bOOaY" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyD-qlC-H83zt1DZLMswU-DrEYB3P3bOOaY" />
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Show your location on the map" />
+        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Trace your location on the map" />
+    </plugin>
+    <plugin name="cordova-plugin-statusbar" spec="^2.2.3" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
+</widget>

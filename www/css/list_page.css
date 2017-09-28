@@ -1,0 +1,38 @@
+#list-view li {
+  padding-left: 30px;
+  height: 60px;
+}
+
+#list_page {
+  -webkit-overflow-scrolling: touch;    
+}
+
+#list_text_span {
+  margin-left: -20px;
+}
+
+#list_page {
+  position: fixed;
+  top: 0px;
+  bottom: 40px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  z-index: 1;
+}
+#wrapper {
+  position: relative;
+  top: 65px;
+  padding-top: 16px;
+  overflow: auto;
+}
+
+.list_image {
+  position: absolute;
+  height: 50px;
+  top: 15px
+}
+
+.list_content {
+  margin-left: 60px;
+}

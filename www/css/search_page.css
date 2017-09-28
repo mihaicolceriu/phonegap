@@ -1,0 +1,47 @@
+#search_page {
+  position: fixed;
+  top: 0px;
+  bottom: 40px;
+  left: 0px;
+  right: 0px;
+}
+
+.search_box {
+  position: fixed;
+  height: 50px;
+  width: 101%;
+  top: 55px;
+  background-color: #cbcdcd;
+  left: -1px;
+  border-bottom: 0.1px solid #a2a3a3;
+  z-index: 3;
+}
+
+#search_box {
+  position: fixed;
+  top: 70px;
+  border: 1px solid #8b8b8b;
+  left: 3%;
+  width: 94%;
+  font-family: Arial, FontAwesome, sans-serif;
+  min-height: 25px;
+  height: 30px;
+  background: white none;
+  font-size: 14px;
+}
+
+#search_text_span {
+  margin-left: -27px;
+}
+
+#search-results {
+  position: fixed;
+  top: 122px;
+  left: 0px;
+  right: 0px;
+}
+
+#search-results li {
+  padding-left: 30px; 
+  height: 45px;
+}

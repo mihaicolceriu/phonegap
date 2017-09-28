@@ -1,0 +1,162 @@
+#navbar .ui-btn {
+  height: 22px;
+  background-color: #f5f6f5;
+  border: none;
+}
+
+.menu_text {
+  position: absolute;
+  margin-top: 18px;
+  font-weight: 200;
+  color: #8b8b8b;
+  font-size: 11px;
+  text-shadow: none;
+}
+
+.fa-list, .fa-globe, .fa-search {
+  margin-top: -5px;
+  font-size: 22px;
+  color: #8b8b8b;
+  text-shadow: none;
+}
+
+.ui-btn-active .fa-list, .ui-btn-active .fa-globe, .ui-btn-active .fa-search, .ui-btn-active .menu_text {
+  color: #38c;
+}
+
+.ui-page-theme-a .ui-btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#header {
+  background-color: #439fd0;
+  position: fixed;
+  top: -1px;
+  left: 0px;
+  right: 0px;
+  height: 65px;
+  border-bottom: 0.25px solid #737474;
+  text-align: center;
+}
+
+#header .nav_title {
+  color: white;
+  text-shadow: none;
+  font-size: 18px;
+  line-height: 2.5;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.item {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  color: gray;
+  margin: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#location_data {
+  position: fixed;
+  top: 0px;
+  bottom: 40px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  z-index: 2;
+  background-color: gainsboro;
+}
+
+.title {
+  position: relative;
+  top: 55px;
+}
+
+.subtitle {
+  position: relative;
+  top: 35px;
+}
+
+.last_updated {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+}
+
+.location_details {
+  background-color: white;
+  position: relative;
+  top: 30px;
+  text-align: center;
+  width: 100%;
+  height: 170px;
+}
+
+i.fa.fa-location-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+a.details_address.ui-link {
+  position: absolute;
+  top: 17px;
+  left: 45px;
+}
+
+i.fa.fa-phone {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+
+.details_phone {
+  position: absolute;
+  top: 57px;
+  left: 45px;
+}
+
+.location_image {
+  position: relative;
+  height: 200px;
+  top: 50px;
+}
+
+i.fa.fa-chevron-left {
+  position: absolute;
+  color: white;
+  left: 5px;
+  top: 20px;
+  font-size: 23px;
+  padding: 10px;
+  -webkit-text-stroke: 0.1px white;
+}
+
+i.fa.fa-map-marker {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+.view_on_map {
+  position: absolute;
+  top: 97px;
+  left: 45px;
+}
+
+.not-active {
+  pointer-events: none;
+}

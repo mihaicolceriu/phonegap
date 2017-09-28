@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta name = "format-detection" content = "telephone=no">
+        <title>Potdrive</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+      <div data-role="page" data-position="fixed">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" id="header">
+          <i class="fa fa-chevron-left hide" aria-hidden="true"></i>
+          <p class="nav_title">MAP</p>
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
+        <div data-role="content" class="ui-content">
+          <div class="hide" id="location_data">
+            <h4 class="title">Main Title</h4>
+            <img class="location_image" src="images/image_placeholder.png" />
+            <h5 class="subtitle">Address of Location</h5>
+            <div class="location_details">
+              <i class="fa fa-location-arrow" aria-hidden="true"></i>
+              <a class="details_address">Address of Location</a>
+              
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a class="details_phone">123-456-7890</a>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <a class="view_on_map">View on Map</a>
+              <p class="last_updated">Updated on Jan 02, 2017</p>
+            </div>
+          </div>
+          <div id="list_page">
+            <div id="wrapper">
+              <ul data-role="listview" id="list-view">
+              </ul>
+            </div>
+          </div>
+          <div id="googlemaps_page">
+            <span class="location_popup hide">
+              <img class="popup_image" src="images/image_placeholder.png" />
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <h5 class="popup_title">Main Title</h5>
+              <h5 class="popup_address">Address of Location</h5>
+              <h5 class="popup_phonenumber">123-456-7890</h5>
+            </span>
+          </div>
+          <div id="search_page" class="hide">
+            <div class="search_box">
+              <input id="search_box" type="text" placeholder="&#xf002;">
+            </div>
+            <div id="search_results_div">
+              <ul data-role="listview" id="search-results">
+              </ul>
+            </div>
+          </div>
+        </div><!-- content -->
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" id="footer">		
+          <div data-role="navbar" id="navbar" data-position="fixed">
+            <ul>
+              <li id="menu_googlemaps_btn"><a href="#" class="ui-btn-active not-active"><i class="fa fa-globe" aria-hidden="true"></i><span class="menu_text" id="map_text_span">Map</span></a></li>
+              <li id="menu_list_btn"><a href="#" class="not-active"><i class="fa fa-list" aria-hidden="true"></i><span class="menu_text" id="list_text_span">List</span></a></li>
+              <li id="menu_search_btn"><a href="#" class="not-active"><i class="fa fa-search" aria-hidden="true"></i><span class="menu_text" id="search_text_span">Search</span></a></li>
+            </ul>
+          </div>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+      
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="javascripts/application/iscroll-probe.js"></script>
+      <script type="text/javascript" src="javascripts/googlemaps.js"></script>
+      <script type="text/javascript" src="javascripts/list_page.js"></script>
+      <script type="text/javascript" src="javascripts/search.js"></script>
+      <script type="text/javascript" src="javascripts/index.js"></script>
+    </body>
+</html>
